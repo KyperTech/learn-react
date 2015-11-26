@@ -1,13 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
-* [Schedule](schedule.md)
-* [First website](first-website/first-website.md)
-   * [Designing](first-website/designing.md)
-   * [Building](first-website/building.md)
-   * [Deploying](first-website/deploying.md)
-* [Data and interactivity](data-and-interactivity/data-and-interactivity.md)
-   * [Designing](data-and-interactivity/designing.md)
-   * [Building](data-and-interactivity/building.md)
-   * [Deploying](data-and-interactivity/deploying.md)
-
+* [Basics](basics)
+   * [Primer](basics/01-primer.md)
+   * [Simple Example](basics/02-simple-example.md)
+   * [Using It](basics/03-second-primer.md)
+* [Getting Started](getting-started/)
+   * [Start](getting-started/start-project.md)
