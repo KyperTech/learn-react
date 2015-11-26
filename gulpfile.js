@@ -6,7 +6,7 @@ gulp.task('build', function(){
   return gulp.src([
     './_book/**',
   ], {base: '_book'})
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('._book/'));
 });
 
 // The default task (called when you run `gulp` from cli)
