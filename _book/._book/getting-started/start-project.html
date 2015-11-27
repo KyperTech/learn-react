@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Simple Example | Learn</title>
+        <title>Start | Learn</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.3.3">
@@ -25,10 +25,8 @@
         
     
     
-    <link rel="next" href="../basics/03-second-primer.html" />
     
-    
-    <link rel="prev" href="../basics/01-primer.html" />
+    <link rel="prev" href="../getting-started.html" />
     
 
         
@@ -36,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="1.2" data-basepath=".." data-revision="Fri Nov 27 2015 11:24:53 GMT-0500 (EST)">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="Fri Nov 27 2015 11:22:41 GMT-0500 (EST)">
     
 
 <div class="book-summary">
@@ -89,7 +87,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="basics/02-simple-example.html">
+        <li class="chapter " data-level="1.2" data-path="basics/02-simple-example.html">
             
                 
                     <a href="../basics/02-simple-example.html">
@@ -140,7 +138,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1" data-path="getting-started/start-project.html">
+        <li class="chapter active" data-level="2.1" data-path="getting-started/start-project.html">
             
                 
                     <a href="../getting-started/start-project.html">
@@ -265,37 +263,20 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="es6-basic-example">ES6 basic example</h1>
-<p><a href="http://github.com/prescottprue/react-es6-basic" target="_blank">react-es6-basic example code</a></p>
-<p>To get started, lets make the most simple React-ES6 app possible. This will look similar to the example from the end of the Primer, but we will be actually rendering the element created through the HelloWorld class.</p>
-<p>In order to use ES6 we will need to convert our code to ES5 using Babel. This can be done before running your application or while it is running. For now we are going to go with the simple example and just convert it when the application starts running.</p>
-<p>Create an <code>index.html</code> with the following code:</p>
-<pre><code class="lang-html"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&apos;en&apos;</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&apos;utf-8&apos;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>React-ES6-Basic<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.25/browser.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-with-addons.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/babel&quot;</span>&gt;</span><span class="javascript">
-    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
-      render() {
-        <span class="hljs-keyword">return</span> (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Hello, world<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>)</span>;
-      }
-    }
-    <span class="hljs-keyword">let</span> rootElement = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;content&apos;</span>);
-    ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">HelloWorld</span> /&gt;</span>, rootElement);
-  </span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
-</code></pre>
-<p>When you run your index.html file in a browser you should see Hello, world displayed in the view. This is the most simple form of using React with ES6 to create HTML.</p>
-<p>Though this is a useful example, we will need to create more Components in order to make a whole application. With all of the code that comes with that, it is best to organize Components into different files and convert to ES5 before run time. Webpack will help us build all of our classes together while converting them.</p>
-<p>Continue to the second primer to learn about how to use Webpack to build a basic application.</p>
+                        <h1 id="start-project">Start Project</h1>
+<h2 id="new-project-with-webpack-react-and-redux">New Project with Webpack, React, and Redux</h2>
+<ol>
+<li>Install the generator using:
+<code>npm install -g generator kyper-react</code></li>
+<li>Create a new folder for your project and enter it:
+<code>mkdir myProject</code> then <code>cd myProject</code></li>
+<li>Run the generator:
+<code>yo kyper-react</code></li>
+<li>Select N to not include Matter when prompted on authentication</li>
+<li>Wait for copying and npm installing to finish</li>
+<li>Run <code>npm start</code> then visit <a href="http://localhost:3000" target="_blank">localhost:3000</a>.</li>
+</ol>
+<p>Here you will see a new starter application created with the name of your project folder.</p>
 
                     
                     </section>
@@ -306,10 +287,8 @@
         </div>
 
         
-        <a href="../basics/01-primer.html" class="navigation navigation-prev " aria-label="Previous page: Primer"><i class="fa fa-angle-left"></i></a>
+        <a href="../getting-started.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Getting Started"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../basics/03-second-primer.html" class="navigation navigation-next " aria-label="Next page: Using It"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

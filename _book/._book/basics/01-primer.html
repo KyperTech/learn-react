@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Simple Example | Learn</title>
+        <title>Primer | Learn</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.3.3">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../basics/03-second-primer.html" />
+    <link rel="next" href="../basics/02-simple-example.html" />
     
     
-    <link rel="prev" href="../basics/01-primer.html" />
+    <link rel="prev" href="../index.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="1.2" data-basepath=".." data-revision="Fri Nov 27 2015 11:24:53 GMT-0500 (EST)">
+    <div class="book" data-level="1.1" data-basepath=".." data-revision="Fri Nov 27 2015 11:22:41 GMT-0500 (EST)">
     
 
 <div class="book-summary">
@@ -74,7 +74,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1" data-path="basics/01-primer.html">
+        <li class="chapter active" data-level="1.1" data-path="basics/01-primer.html">
             
                 
                     <a href="../basics/01-primer.html">
@@ -89,7 +89,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="basics/02-simple-example.html">
+        <li class="chapter " data-level="1.2" data-path="basics/02-simple-example.html">
             
                 
                     <a href="../basics/02-simple-example.html">
@@ -265,37 +265,53 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="es6-basic-example">ES6 basic example</h1>
-<p><a href="http://github.com/prescottprue/react-es6-basic" target="_blank">react-es6-basic example code</a></p>
-<p>To get started, lets make the most simple React-ES6 app possible. This will look similar to the example from the end of the Primer, but we will be actually rendering the element created through the HelloWorld class.</p>
-<p>In order to use ES6 we will need to convert our code to ES5 using Babel. This can be done before running your application or while it is running. For now we are going to go with the simple example and just convert it when the application starts running.</p>
-<p>Create an <code>index.html</code> with the following code:</p>
-<pre><code class="lang-html"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&apos;en&apos;</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&apos;utf-8&apos;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>React-ES6-Basic<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.25/browser.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-with-addons.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/babel&quot;</span>&gt;</span><span class="javascript">
-    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
-      render() {
-        <span class="hljs-keyword">return</span> (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Hello, world<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>)</span>;
-      }
-    }
-    <span class="hljs-keyword">let</span> rootElement = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;content&apos;</span>);
-    ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">HelloWorld</span> /&gt;</span>, rootElement);
-  </span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+                        <h1 id="primer">Primer</h1>
+<p>Before we get into building anything, lets discuss why we will be using the tools that we will be using.</p>
+<h2 id="react">React</h2>
+<p>React provides a simple and organized way to build &quot;Reactive&quot; HTML, which basically means HTML that can change based on something going on within an application. This is useful to keep from having to make tons of similar HTML files, as well as for general code organization.</p>
+<h2 id="es6">ES6</h2>
+<p>ES6 is a new version of Javascript that is actually so new that not all browsers support it yet. The good thing is that there are tools like <a href="">Babel</a> that allows you to convert ES6/ES7 code to ES5 so that it will run in every browser.</p>
+<p>Among other things, ES6 has the capability to create Classes. A class is a way to organize creating objects of a the same type. Below we will create a Car class:</p>
+<p>Car Class:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+  <span class="hljs-comment">//Runs when calling new</span>
+  constructor(carData) {
+    <span class="hljs-comment">//Set Car&apos;s attributes from passed data</span>
+    <span class="hljs-keyword">this</span>.color = carData.color;
+    <span class="hljs-keyword">this</span>.make = carData.make;
+  }
+  <span class="hljs-comment">//Method to get color and make together</span>
+  get colorAndMake() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.color + <span class="hljs-string">&apos; &apos;</span> + <span class="hljs-keyword">this</span>.make;
+  }
+}
 </code></pre>
-<p>When you run your index.html file in a browser you should see Hello, world displayed in the view. This is the most simple form of using React with ES6 to create HTML.</p>
-<p>Though this is a useful example, we will need to create more Components in order to make a whole application. With all of the code that comes with that, it is best to organize Components into different files and convert to ES5 before run time. Webpack will help us build all of our classes together while converting them.</p>
-<p>Continue to the second primer to learn about how to use Webpack to build a basic application.</p>
+<p>Creating new Car:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> myCar = <span class="hljs-keyword">new</span> Car({color: <span class="hljs-string">&apos;Black&apos;</span>, make: <span class="hljs-string">&apos;Tesla&apos;</span>});
+<span class="hljs-keyword">let</span> myFriendsCar = <span class="hljs-keyword">new</span> Car({color: <span class="hljs-string">&apos;White&apos;</span>, make: <span class="hljs-string">&apos;Audi&apos;</span>});
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;My car is a &apos;</span> + myCar.colorAndMake);
+<span class="hljs-comment">//Output: My car is a Black Tesla</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;My friends car is a &apos;</span> + myFriendsCar.colorAndMake);
+<span class="hljs-comment">//Output: My friends car is a White Audi</span>
+</code></pre>
+<p>This example is some what simple, but it shows how using a class can organize functionality in an Object Oriented manor.</p>
+<h2 id="react-and-es6-combined">React and ES6 combined</h2>
+<p>Classes become particularly useful when combined with React because you actually create a Class for a set of HTML. That means you can change what is displayed based on data that changes within an application while still keeping to the object oriented organization.</p>
+<p>Here is an example of a simple ES6 class that uses React to become an HTML element.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">//Basic React class that becomes an HTML element by extending React.Component</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Hello, world<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>)</span>;
+  }
+}
+</code></pre>
+<p>The simple-example uses this same code to create an HTML element that is then rendered.</p>
+<h2 id="nodejs-and-npm">NodeJS and NPM</h2>
+<p><a href="nodejs.org">NodeJS</a> is server side or &quot;backend&quot; javascript. NodeJS comes with a package managing tool called NPM that is a useful library/dependency management tool even for websites or &quot;frontend&quot;.</p>
+<p>NPM organizes dependencies into a <code>package.json</code> file and allows you to add libraries, such as <a href="">Lodash</a> to your project by running <code>npm install --save lodash</code>.</p>
+<h4 id="references">References</h4>
 
                     
                     </section>
@@ -306,10 +322,10 @@
         </div>
 
         
-        <a href="../basics/01-primer.html" class="navigation navigation-prev " aria-label="Previous page: Primer"><i class="fa fa-angle-left"></i></a>
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../basics/03-second-primer.html" class="navigation navigation-next " aria-label="Next page: Using It"><i class="fa fa-angle-right"></i></a>
+        <a href="../basics/02-simple-example.html" class="navigation navigation-next " aria-label="Next page: Simple Example"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
